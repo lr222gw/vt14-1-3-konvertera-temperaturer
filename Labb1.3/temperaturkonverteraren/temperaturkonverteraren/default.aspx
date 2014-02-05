@@ -33,7 +33,7 @@
 
         <asp:Button ID="convertButton" runat="server" Text="Konvertera" OnClick="convertButton_Click" Enabled="false" />
 
-        <asp:Table ID="myTable" runat="server" Enabled="false"></asp:Table>
+        <asp:Table ID="myTable" runat="server" Enabled="false" ViewStateMode="Enabled"></asp:Table>
 
     </div>
     </form>
