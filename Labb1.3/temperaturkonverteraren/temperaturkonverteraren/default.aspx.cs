@@ -13,5 +13,15 @@ namespace temperaturkonverteraren
         {
 
         }
+
+        protected void convertButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void CheckedChanged(object sender, EventArgs e)
+        {
+            convertButton.Enabled = true;
+        }
     }
 }
