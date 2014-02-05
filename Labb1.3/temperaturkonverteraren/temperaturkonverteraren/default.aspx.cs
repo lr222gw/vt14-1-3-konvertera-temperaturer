@@ -46,15 +46,30 @@ namespace temperaturkonverteraren
 
                 }
 
+                var tableRowTitle = new TableRow();
+                var tableCellC = new TableCell();
+                tableCellC.Text = "Celsius";
+                var tableCellF = new TableCell();
+                tableCellF.Text = "Fahrenheit";
+
+                
 
                 if (cToF_Conv.Checked) // om man ska converta från Celsius till Fahrenheit 
                 {
+                    tableRowTitle.Cells.Add(tableCellC);
+                    tableRowTitle.Cells.Add(tableCellF);
+                    var arrayWithTabelizer = Model.tabelizer.tabelToNewFormat(myTable, "C");
                     
                 }
                 else // om man ska converta från Fahrenheit  till Celsius 
                 {
-
+                    tableRowTitle.Cells.Add(tableCellF);
+                    tableRowTitle.Cells.Add(tableCellC);
+                    var arrayWithTabelizer = Model.tabelizer.tabelToNewFormat(myTable, "F");
+                    
                 }
+               
+                myTable.Rows.AddAt(0, tableRowTitle);
             }
         }
 

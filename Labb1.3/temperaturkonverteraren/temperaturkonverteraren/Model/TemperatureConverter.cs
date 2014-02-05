@@ -16,7 +16,7 @@ namespace temperaturkonverteraren.Model
         
         public static int FahrenheitToCelsius(int degreesF)
         {
-            double celsius = (degreesF - 32) * (5 / 9);
+            double celsius = (degreesF - 32) * ((double)5/9);
             return (int)celsius;
         }
     }
