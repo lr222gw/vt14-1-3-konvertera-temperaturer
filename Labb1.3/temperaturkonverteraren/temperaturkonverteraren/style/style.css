@@ -1,6 +1,21 @@
 ﻿body {
+    background-color: rgb(184, 184, 184);
 }
 
-input {
-display:block;
+#myTable {
+background-color: rgb(182, 182, 182);
+padding: 5px;
+width: 250px;
+}
+
+#myTable tbody {
+background-color: rgb(163, 163, 163);
+}
+
+span {
+display: block;
+}
+
+#intervalRFV, #StopTempMoreThanStartTemp, #stopTempCV, #startTempCV, #startTempRFV, #stopTempRFV, #intervalCV, #intervalRV {
+    display: inline;
 }

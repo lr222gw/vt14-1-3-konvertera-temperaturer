@@ -26,6 +26,7 @@ namespace temperaturkonverteraren
                 var numberOfFields = (toDevideWithInterval / int.Parse(interval.Text)) +1; // +1 för att få med första talet man fyller i... DETTA ÄR ANTALET tal som skrivs ut i tabellen
 
                 myTable.Enabled = true; //tar fram tabellen
+                myTable.Visible = true; // låter tabellen synas, utan denna så ser man att tabellen finns i htmlkoden...
                 
                 int theInterval = int.Parse(interval.Text);
 
@@ -76,7 +77,7 @@ namespace temperaturkonverteraren
         protected void CheckedChanged(object sender, EventArgs e)
         {
             convertButton.Enabled = true;
-            
+            myTable.Visible = false; // denna sätts till false här, annars kommer paddingen att synas..
         }
     }
 }

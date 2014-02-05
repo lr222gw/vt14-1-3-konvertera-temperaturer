@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet"  href="style/style.css" />
+    <link rel="stylesheet"  href="~/style/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -33,7 +33,7 @@
 
         <asp:Button ID="convertButton" runat="server" Text="Konvertera" OnClick="convertButton_Click" Enabled="false" />
 
-        <asp:Table ID="myTable" runat="server" Enabled="false" ViewStateMode="Enabled"></asp:Table>
+        <asp:Table ID="myTable" runat="server" Enabled="false" Visible="false" ViewStateMode="Enabled"></asp:Table>
 
     </div>
     </form>
