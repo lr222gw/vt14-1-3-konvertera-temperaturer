@@ -16,12 +16,22 @@ namespace temperaturkonverteraren
 
         protected void convertButton_Click(object sender, EventArgs e)
         {
+            if(IsValid){
+                if (cToF_Conv.Checked) // om man ska converta från Celsius till Fahrenheit 
+                {
+                    
+                }
+                else// om man ska converta från Fahrenheit  till Celsius 
+                {
 
+                }
+            }
         }
 
         protected void CheckedChanged(object sender, EventArgs e)
         {
             convertButton.Enabled = true;
+            
         }
     }
 }

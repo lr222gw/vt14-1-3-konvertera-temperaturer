@@ -5,7 +5,16 @@ using System.Web;
 
 namespace temperaturkonverteraren.Model
 {
-    public class TemperatureConverter
+    public static class TemperatureConverter
     {
+        public static int CelsiusToFahrenheit(int degreesC)
+        {
+            return degreesC;
+        }
+
+        public static int FahrenheitToCelsius(int degreesF)
+        {
+            return degreesF;
+        }
     }
 }
